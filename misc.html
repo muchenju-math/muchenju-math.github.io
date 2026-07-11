@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Misc - Muchen Ju</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .photo-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+
+    .photo-gallery figure {
+      margin: 0;
+      width: min(100%, 415px);
+    }
+
+    .photo-gallery img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 6px;
+    }
+
+    .photo-gallery figcaption {
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="cv.html">CV</a>
+    <a href="misc.html">Misc</a>
+  </nav>
+
+  <main>
+    <h1>Misc</h1>
+
+    <p>
+      In my spare time, I enjoy fishing and playing tennis.
+    </p>
+
+    <section class="photo-gallery" aria-label="Personal photos">
+      <figure>
+        <img src="images/fishing.jpg" alt="Fishing" loading="lazy">
+      </figure>
+
+      <figure>
+        <img src="images/tennis.jpg" alt="Playing tennis" loading="lazy">
+      </figure>
+    </section>
+  </main>
+</body>
+</html>
+
