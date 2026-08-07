@@ -2,8 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research - Muchen Ju</title>
   <link rel="stylesheet" href="style.css">
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 
 <body>
@@ -17,52 +31,116 @@
   <main>
     <h1>Research</h1>
 
-      <p>
-    My research interests lie primarily in probability and combinatorics, with an emphasis on random graphs, random matrices, and statistical inference on networks. Current topics of interest include:
-  </p>
+    <p>
+      My research interests lie primarily in probability and combinatorics, with an emphasis on random graphs, random matrices, and statistical inference on networks. Current topics of interest include:
+    </p>
 
-  <ul>
-    <li>Opinion-exchange dynamics on random networks</li>
-    <li>Detection and recovery of planted structures in random graphs</li>
-    <li>Spectral properties of random matrices</li>
-  </ul>
+    <ul>
+      <li>Opinion-exchange dynamics on random networks</li>
+      <li>Detection and recovery of planted structures in random graphs</li>
+      <li>Spectral properties of random matrices</li>
+    </ul>
 
-  <p>
-    I have also worked on problems in Ramsey theory, additive combinatorics, and Schubert calculus.
-  </p>
+    <p>
+      I have also worked on problems in Ramsey theory, additive combinatorics, and Schubert calculus.
+    </p>
 
-  <p>
-    As an early-career researcher, I aim to explore a broad range of areas in mathematics. If you would like to discuss mathematics or collaborate on a problem, please feel free to stop by my office or send me an email.
-  </p>
+    <p>
+      If you'd like to chat about a project or explore a possible collaboration, please feel free to stop by my office or send me an email—I'd be happy to connect.
 
+    </p>
 
+    <h2>Papers and Preprints</h2>
+    <p style="font-style: italic; color: #666; margin-top: -10px; margin-bottom: 20px;">
+      Authors are listed in alphabetical order, unless otherwise noted.
+    </p>
+    <ol class="publication-list">
+      <li>
+        <div class="publication-entry">
+          <strong>Arborescences of random covering graphs</strong>,
+          with Junjie Ni, Kaixin Wang, and Yihan Xiao.
+          <a href="https://www.math.sci.hokudai.ac.jp/sympo/fpsac2025/public/posters/165.pdf">FPSAC 2025</a>.
+          <a href="https://arxiv.org/abs/2412.12633">arXiv</a>.
+          <button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="abstract-2412-12633">
+            Summary
+          </button>
+        </div>
+        <div class="abstract-panel" id="abstract-2412-12633" hidden>
+          <p>
+            A rooted arborescence of a directed graph is a spanning tree oriented toward a chosen vertex. Building on work of Chepuri et al. connecting arborescences of a directed graph \(G\) with those of its covering graphs, this paper studies the weighted total of arborescences in a random covering graph. It derives a formula for the expected weighted sum and thereby resolves a conjecture posed by Chepuri et al.
+          </p>
+        </div>
+      </li>
 
-<h2>Papers and Preprints</h2>
+      <li>
+        <div class="publication-entry">
+          <strong>Sharp inner product correlations for hypercube bijections</strong>,
+          with Ijay Narang.
+          Submitted to <em>SIAM Journal on Discrete Mathematics</em>.
+          <a href="https://arxiv.org/abs/2509.00716">arXiv</a>.
+          <button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="abstract-2509-00716">
+            Summary
+          </button>
+        </div>
+        <div class="abstract-panel" id="abstract-2509-00716" hidden>
+          <p>
+            The paper proves a conjecture of Rob Morris about bijections of the hypercube. For every bijection \(f:\{-1,1\}^n\to\{-1,1\}^n\), it establishes
+          </p>
+          <div class="display-math">
+            \[
+              \Pr_{x,y\in\{-1,1\}^n}\!\left[
+                \langle x,y\rangle\ge 0\ \text{and}\
+                \langle f(x),f(y)\rangle\ge 0
+              \right]
+              \ge \frac14-O\!\left(\frac1{\sqrt n}\right).
+            \]
+          </div>
+          <p>
+            The argument uses the spectral decomposition of the Hamming association scheme to recast the problem as a linear program over the Birkhoff polytope. The nonprincipal spectral contribution is shown to be asymptotically negligible, leaving the principal eigenvalue as the dominant term.
+          </p>
+        </div>
+      </li>
 
-<ol>
-  <li>
-    <strong>Arborescences of random covering graphs</strong>,
-    with Junjie Ni, Kaixin Wang, and Yihan Xiao.
-    <a href="https://www.math.sci.hokudai.ac.jp/sympo/fpsac2025/public/posters/165.pdf">FPSAC 2025</a>.
-    <a href="https://arxiv.org/abs/2412.12633">arXiv</a>.
-  </li>
-
-  <li>
-    <strong>Sharp inner product correlations for hypercube bijections</strong>,
-    with Ijay Narang.
-    Submitted to <em>SIAM Journal on Discrete Mathematics</em>.
-    <a href="https://arxiv.org/abs/2509.00716">arXiv</a>.
-  </li>
-
-  <li>
-    <strong>Majority dynamics on assortative sparse stochastic block models</strong>,
-    with Ioana Dumitriu and Hai-Xiao Wang.
-    Submitted.
-    <a href="https://arxiv.org/abs/2607.24652">arXiv</a>.
-  </li>
-</ol>
-
-
+      <li>
+        <div class="publication-entry">
+          <strong>Majority dynamics on assortative sparse stochastic block models</strong>,
+          with Ioana Dumitriu and Hai-Xiao Wang.
+          Submitted.
+          <a href="https://arxiv.org/abs/2607.24652">arXiv</a>.
+          <button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="abstract-2607-24652">
+            Summary
+          </button>
+        </div>
+        <div class="abstract-panel" id="abstract-2607-24652" hidden>
+          <p>
+            This work studies majority dynamics on a resampled sparse binary stochastic block model in the assortative regime. At each update, the graph is redrawn from the current opinion partition: same-opinion vertices connect with probability \(\alpha=a\log N/N\), while opposite-opinion vertices connect with probability \(\beta=b\log N/N\), with \(a&gt;b&gt;1\).
+          </p>
+          <p>
+            Writing \(B_t\) and \(R_t\) for the blue and red camps, the analysis shows that the weighted advantage
+            \(\widetilde{\Delta}_t=b|B_t|-a|R_t|\), rather than only the ordinary difference \(\Delta_t=|B_t|-|R_t|\), controls the time to unanimity. With high probability as \(N\to\infty\), the paper identifies constant-time, subpolynomial-time, and polynomial-time regimes for reaching blue unanimity from an initial blue majority.
+          </p>
+          <p>
+            In particular, blue unanimity occurs within three updates when \(\widetilde{\Delta}_0\gtrsim-N/\sqrt{\log N}\), and within \(N^{o(1)}\) updates when \(\widetilde{\Delta}_0&lt;0\) but \(|\widetilde{\Delta}_0|=o(N)\). In the polynomial regime the exponent is governed by
+          </p>
+          <div class="display-math">
+            \[
+              I_0=
+              \left(
+                \mathbf{ReLU}\!\left(
+                  \sqrt{a\frac{|R_0|}{N}}-
+                  \sqrt{b\frac{|B_0|}{N}}
+                \right)
+              \right)^2,
+              \qquad
+              \mathbf{ReLU}(x)=\max\{x,0\}.
+            \]
+          </div>
+          <p>
+            The proof develops precise estimates for one-vertex flip probabilities involving sparse binomial differences, which may also be useful beyond this model.
+          </p>
+        </div>
+      </li>
+    </ol>
 
     <h2>Talks</h2>
 
@@ -70,5 +148,22 @@
       Nothing listed yet.
     </p>
   </main>
+
+  <script>
+    document.querySelectorAll('.abstract-toggle').forEach((button) => {
+      button.addEventListener('click', () => {
+        const panel = document.getElementById(button.getAttribute('aria-controls'));
+        const isOpen = button.getAttribute('aria-expanded') === 'true';
+
+        button.setAttribute('aria-expanded', String(!isOpen));
+        button.textContent = isOpen ? 'Summary' : 'Hide summary';
+        panel.hidden = isOpen;
+
+        if (!isOpen && window.MathJax && MathJax.typesetPromise) {
+          MathJax.typesetPromise([panel]).catch(() => {});
+        }
+      });
+    });
+  </script>
 </body>
 </html>
