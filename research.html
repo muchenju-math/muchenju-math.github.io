@@ -6,6 +6,38 @@
   <title>Research - Muchen Ju</title>
   <link rel="stylesheet" href="style.css">
 
+  <style>
+    .publication-entry a.abstract-toggle,
+    .publication-entry button.abstract-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      min-width: 4.7em;
+      height: 1.9em;
+      padding: 0 0.55em;
+      border: 1px solid #999;
+      border-radius: 4px;
+      background: #fff;
+      color: inherit;
+      font: inherit;
+      font-size: 0.9em;
+      line-height: 1;
+      vertical-align: middle;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .publication-entry a.abstract-toggle:hover,
+    .publication-entry a.abstract-toggle:focus-visible,
+    .publication-entry button.abstract-toggle:hover,
+    .publication-entry button.abstract-toggle:focus-visible {
+      background: #f3f3f3;
+      text-decoration: none;
+    }
+  </style>
+
+
   <script>
     window.MathJax = {
       tex: {
@@ -52,61 +84,53 @@
 
     <h2>Papers and Preprints</h2>
     <p style="font-style: italic; color: #666; margin-top: -10px; margin-bottom: 20px;">
-      Authors are listed in alphabetical order, unless otherwise noted.
+      Papers are listed in reverse chronological order. Authors are listed in alphabetical order, unless otherwise noted.
     </p>
+
     <ol class="publication-list">
       <li>
         <div class="publication-entry">
-          <strong>Arborescences of random covering graphs</strong>,
-          with Junjie Ni, Kaixin Wang, and Yihan Xiao.
-          <a href="https://www.math.sci.hokudai.ac.jp/sympo/fpsac2025/public/posters/165.pdf">FPSAC 2025</a>.
-          <a href="https://arxiv.org/abs/2412.12633">arXiv</a>.
-          <button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="abstract-2412-12633">
+          <strong>Majority Dynamics on Resampled Sparse Erdős–Rényi Graphs: Gaussian Winner Selection and Pace to Unanimity</strong>,
+          with Ioana Dumitriu and Hai-Xiao Wang.
+          <a class="abstract-toggle" href="https://arxiv.org/abs/2608.06159">arXiv</a>
+          <button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="abstract-2608-06159">
             Summary
           </button>
         </div>
-        <div class="abstract-panel" id="abstract-2412-12633" hidden>
+        <div class="abstract-panel" id="abstract-2608-06159" hidden>
           <p>
-            A rooted arborescence of a directed graph is a spanning tree oriented toward a chosen vertex. Building on work of Chepuri et al. connecting arborescences of a directed graph \(G\) with those of its covering graphs, this paper studies the weighted total of arborescences in a random covering graph. It derives a formula for the expected weighted sum and thereby resolves a conjecture posed by Chepuri et al.
+            This paper studies two-opinion majority dynamics when the interaction graph is independently resampled at every step from the sparse Erdős–Rényi model \(\mathbb{G}(N,p)\), with \(p=b\log N/N\) and fixed \(b&gt;1\). The behavior is governed by the initial blue advantage \(\Delta_0=|B_0|-|R_0|\).
           </p>
-        </div>
-      </li>
-
-      <li>
-        <div class="publication-entry">
-          <strong>Sharp inner product correlations for hypercube bijections</strong>,
-          with Ijay Narang.
-          Submitted to <em>SIAM Journal on Discrete Mathematics</em>.
-          <a href="https://arxiv.org/abs/2509.00716">arXiv</a>.
-          <button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="abstract-2509-00716">
-            Summary
-          </button>
-        </div>
-        <div class="abstract-panel" id="abstract-2509-00716" hidden>
           <p>
-            The paper proves a conjecture of Rob Morris about bijections of the hypercube. For every bijection \(f:\{-1,1\}^n\to\{-1,1\}^n\), it establishes
+            The results identify three regimes. An initial blue advantage above an explicit constant multiple of \(N/\sqrt{\log N}\) yields blue unanimity within two updates with high probability. In the intermediate range \(\sqrt{N/\log N}\ll\Delta_0\lesssim N/\sqrt{\log N}\), the paper gives explicit high-probability upper and lower bounds on the time to blue unanimity.
+          </p>
+          <p>
+            In the critical window \(\Delta_0\sqrt p=O(1)\), the eventual winner has an asymptotically Gaussian selection law:
           </p>
           <div class="display-math">
             \[
-              \Pr_{x,y\in\{-1,1\}^n}\!\left[
-                \langle x,y\rangle\ge 0\ \text{and}\
-                \langle f(x),f(y)\rangle\ge 0
-              \right]
-              \ge \frac14-O\!\left(\frac1{\sqrt n}\right).
+              \Pr(\text{blue unanimity})
+              =
+              \Phi\!\left(\sqrt{\frac{2}{\pi}}\,\Delta_0\sqrt p\right)+o(1),
+              \]
+            \[
+              \Pr(\text{red unanimity})
+              =
+              \Phi\!\left(-\sqrt{\frac{2}{\pi}}\,\Delta_0\sqrt p\right)+o(1).
             \]
           </div>
           <p>
-            The argument uses the spectral decomposition of the Hamming association scheme to recast the problem as a linear program over the Birkhoff polytope. The nonprincipal spectral contribution is shown to be asymptotically negligible, leaving the principal eigenvalue as the dominant term.
+            In this critical regime, unanimity is reached within \((1+o(1))\log N/\log\log N\) updates with high probability.
           </p>
         </div>
       </li>
 
       <li>
         <div class="publication-entry">
-          <strong>Majority dynamics on assortative sparse stochastic block models</strong>,
+          <strong>Majority Dynamics on Assortative Sparse Stochastic Block Models</strong>,
           with Ioana Dumitriu and Hai-Xiao Wang.
           Submitted.
-          <a href="https://arxiv.org/abs/2607.24652">arXiv</a>.
+          <a class="abstract-toggle" href="https://arxiv.org/abs/2607.24652">arXiv</a>
           <button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="abstract-2607-24652">
             Summary
           </button>
@@ -140,6 +164,52 @@
           </p>
         </div>
       </li>
+
+      <li>
+        <div class="publication-entry">
+          <strong>Sharp Inner Product Correlations for Hypercube Bijections</strong>,
+          with Ijay Narang.
+          Submitted to <em>SIAM Journal on Discrete Mathematics</em>.
+          <a class="abstract-toggle" href="https://arxiv.org/abs/2509.00716">arXiv</a>
+          <button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="abstract-2509-00716">
+            Summary
+          </button>
+        </div>
+        <div class="abstract-panel" id="abstract-2509-00716" hidden>
+          <p>
+            The paper proves a conjecture of Rob Morris about bijections of the hypercube. For every bijection \(f:\{-1,1\}^n\to\{-1,1\}^n\), it establishes
+          </p>
+          <div class="display-math">
+            \[
+              \Pr_{x,y\in\{-1,1\}^n}\!\left[
+                \langle x,y\rangle\ge 0\ \text{and}\
+                \langle f(x),f(y)\rangle\ge 0
+              \right]
+              \ge \frac14-O\!\left(\frac1{\sqrt n}\right).
+            \]
+          </div>
+          <p>
+            The argument uses the spectral decomposition of the Hamming association scheme to recast the problem as a linear program over the Birkhoff polytope. The nonprincipal spectral contribution is shown to be asymptotically negligible, leaving the principal eigenvalue as the dominant term.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <div class="publication-entry">
+          <strong>Arborescences of Random Covering Graphs</strong>,
+          with Junjie Ni, Kaixin Wang, and Yihan Xiao.
+          <a class="abstract-toggle" href="https://www.math.sci.hokudai.ac.jp/sympo/fpsac2025/public/posters/165.pdf">FPSAC</a>
+          <a class="abstract-toggle" href="https://arxiv.org/abs/2412.12633">arXiv</a>
+          <button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="abstract-2412-12633">
+            Summary
+          </button>
+        </div>
+        <div class="abstract-panel" id="abstract-2412-12633" hidden>
+          <p>
+            A rooted arborescence of a directed graph is a spanning tree oriented toward a chosen vertex. Building on work of Chepuri et al. connecting arborescences of a directed graph \(G\) with those of its covering graphs, this paper studies the weighted total of arborescences in a random covering graph. It derives a formula for the expected weighted sum and thereby resolves a conjecture posed by Chepuri et al.
+          </p>
+        </div>
+      </li>
     </ol>
 
     <h2>Talks</h2>
@@ -150,7 +220,7 @@
   </main>
 
   <script>
-    document.querySelectorAll('.abstract-toggle').forEach((button) => {
+    document.querySelectorAll('button.abstract-toggle').forEach((button) => {
       button.addEventListener('click', () => {
         const panel = document.getElementById(button.getAttribute('aria-controls'));
         const isOpen = button.getAttribute('aria-expanded') === 'true';
